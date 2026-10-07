@@ -5,35 +5,6 @@
 
 uint8_t lineBuffer[MAX_LINE_LENGHT];
 
-/*
-int dump(FILE *r) {
-    int ch;
-    long count = 0;
-    size_t bufferPass[MAX_LINE_LENGHT];
-
-    while((ch = fgetc(r)) != EOF) {
-        if (count % MAX_LINE_LENGHT == 0) {
-            printf("%08lX  | ", count);
-        }
-
-        printf("%02X ", ch);
-        wbuffer(MAX_LINE_LENGHT, ch, count);
-        count++;
-            /*resto de uma operação modular é indice
-        if (count % MAX_LINE_LENGHT == 8) {
-            printf("  ");
-        }
-        if (count % MAX_LINE_LENGHT == 0) {
-            printf("|\n");
-        }
-    }
-    if (count % MAX_LINE_LENGHT != 0) {
-        printf("\n");
-    }
-
-
-    return 0;
-}*/
 
 int formatterLine(uint8_t line[MAX_LINE_LENGHT], unsigned long *count) {
     
